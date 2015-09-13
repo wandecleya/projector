@@ -19,10 +19,12 @@
   </div>
     <div class="field form-group">
     <%= f.label :office %><br>
+ <%= hidden_field_tag "project[office_ids][]", nil %>
     <% Office.all.each do |office|%>
       <%= check_box_tag "project[office_ids][]", office.id, @project.offices.include?(office)%>
       <%= office.city %>
     <% end %>
+
     <p>Do you want to add a new office? <%= link_to 'New Office', new_office_path %></p>
     
   </div>
