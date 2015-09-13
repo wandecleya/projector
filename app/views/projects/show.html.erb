@@ -10,6 +10,10 @@
   <div class="col-md-6">
     <p><h3><%= @project.name %></h3></p>
     <p><b>Status: </b><%= @project.status %></p>
+    <p><b> Office: </b>
+      <% @project.offices.each do |office|%>
+      <%= link_to  office.city, office %>
+      <% end %></p>
     <p><b><%= 'Project in Production:' if @project.production.present? %> </b><%= link_to @project.production if @project.production.present? %></p>
     <p><b><%= 'Description:' if @project.description.present? %> </b><%= @project.description %></p>
     <p><b><%= 'Technologies:'if @project.technologies.present? %> </b><%= @project.technologies %></p>
