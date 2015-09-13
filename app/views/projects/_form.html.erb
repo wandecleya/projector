@@ -23,6 +23,7 @@
       <%= check_box_tag "project[office_ids][]", office.id, @project.offices.include?(office)%>
       <%= office.city %>
     <% end %>
+    <p>Do you want to add a new office? <%= link_to 'New Office', new_office_path %></p>
     
   </div>
   <div class="field form-group">
