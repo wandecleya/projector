@@ -9,6 +9,9 @@
   <strong>Country:</strong>
   <%= @office.country %>
 </p>
+<% @office.projects.each do |project| %>
+<p><%= project.name %></p>
+<% end %>
 
 <%= link_to 'Edit', edit_office_path(@office) %> |
 <%= link_to 'Back', offices_path %>
