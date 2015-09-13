@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<div class="row">
+  <div class="col-md-6">
+    <%= image_tag(@project.picture_url, width: '100%', :class => 'img-thumbnail' ) if @project.picture.present? %>
+  </div>
+
+  <div class="col-md-6">
+    <p><h3><%= @project.name %></h3></p>
+    <p><b>Status: </b><%= @project.status %></p>
+    <p><b><%= 'Project in Production:' if @project.production.present? %> </b><%= link_to @project.production if @project.production.present? %></p>
+    <p><b><%= 'Description:' if @project.description.present? %> </b><%= @project.description %></p>
+    <p><b><%= 'Technologies:'if @project.technologies.present? %> </b><%= @project.technologies %></p>
+    <p><b><%= 'Contact:' if @project.email.present? %> </b><%= @project.email  %></p>
+    <p><b><%= 'Repository:' if @project.repository.present? %> </b><%= link_to @project.repository   %></p>
+    <p><b><%= 'Project Management System:'if @project.management.present? %>  </b><%=link_to @project.management %></p>
+    <p>
+      <%= link_to 'Edit', edit_project_path(@project), :class => 'btn btn-default' %> 
+      <%= link_to 'Destroy', @project, data: { confirm: 'Are you sure?' }, method: :delete, :class => 'btn btn-default' %> 
+      <%= link_to 'Back', projects_path, :class => 'btn btn-default' %>
+    </p>
+  </div>
+</div>
+
+
+

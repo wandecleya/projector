@@ -1,0 +1,66 @@
+
+
+<%= form_for(@project) do |f| %>
+  <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, :class=>'form-control' %>
+  </div>
+    <div class="field form-group">
+    <%= f.label :office %><br>
+    <% Office.all.each do |office|%>
+      <%= check_box_tag "project[office_ids][]", office.id, @project.offices.include?(office)%>
+      <%= office.city %>
+    <% end %>
+    
+  </div>
+  <div class="field form-group">
+    <%= f.label :status %><br>
+    <%= f.select :status, ['In Development', 'Finished'], :class=>'form-control' %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :description %><br>
+    <%= f.text_area :description, :class=>'form-control', :rows=>'4' %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :technologies %><br>
+    <%= f.text_area :technologies, :class=>'form-control', :rows=>'2' %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :email %><br>
+    <%= f.text_field :email, :class=>'form-control' %>
+  </div>
+  <div class="field form-group">
+    <%= f.label "Link to Production" %><br>
+    <%= f.text_field :production, :class=>'form-control' %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :repository %><br>
+    <%= f.text_field :repository, :class=>'form-control' %>
+  </div>
+    <div class="field form-group">
+    <%= f.label "Project Management System" %><br>
+    <%= f.text_field :management, :class=>'form-control' %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :picture %><br>
+    <%= f.file_field :picture %>
+  </div>
+  <div class="form-group ">
+    <%= f.submit 'Submit', :class => 'btn btn-primary' %>
+    <%= link_to 'Back', projects_path, :class => 'btn btn-default' %>
+   
+  </div>
+
+<% end %>

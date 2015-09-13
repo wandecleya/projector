@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+
+
+
+<% @projects.in_groups_of(3) do |group|%>
+  <div class="row">
+    <% group.compact.each do |project| %>
+      <div class="col-md-4">
+      	 <h4 class='text-center'><%= link_to project.name, project%></h4>
+        <%= image_tag project.picture_url, width: '100%', :class=>"img-thumbnail" if project.present? %>
+       
+        <%= project.description %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+<div class='row'>
+	<%= link_to 'New Project', new_project_path, :class => 'btn btn-default' %>
+</div>
+
+
+
+
+
