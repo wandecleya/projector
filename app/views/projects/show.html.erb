@@ -14,12 +14,12 @@
       <% @project.offices.each do |office|%>
       <%= link_to  office.city, office %>
       <% end %></p>
-    <p><b><%= 'Project in Production:' if @project.production.present? %> </b><%= link_to @project.production if @project.production.present? %></p>
+    <p><b><%= 'Project in Production:' if @project.production.present? %> </b><%= link_to @project.production, @project.production, :target => '_blank'  if @project.production.present? %></p>
     <p><b><%= 'Description:' if @project.description.present? %> </b><%= @project.description %></p>
     <p><b><%= 'Technologies:'if @project.technologies.present? %> </b><%= @project.technologies %></p>
     <p><b><%= 'Contact:' if @project.email.present? %> </b><%= @project.email  %></p>
-    <p><b><%= 'Repository:' if @project.repository.present? %> </b><%= link_to @project.repository   %></p>
-    <p><b><%= 'Project Management System:'if @project.management.present? %>  </b><%=link_to @project.management %></p>
+    <p><b><%= 'Repository:' if @project.repository.present? %> </b><%= link_to @project.repository, @project.repository, :target => '_blank'    %></p>
+    <p><b><%= 'Project Management System:'if @project.management.present? %>  </b><%=link_to @project.management, @project.management, :target => '_blank'  %></p>
      <p><b><%= 'Documentation:'if @project.documentation.present? %>  </b><%=link_to @project.documentation,  @project.documentation, :target => '_blank' %></p>
     <p>
       <%= link_to 'Edit', edit_project_path(@project), :class => 'btn btn-default' %> 

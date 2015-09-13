@@ -4355,3 +4355,136 @@ ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=lsfas):
   Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (109.9ms)
+
+
+Started GET "/projects/1" for ::1 at 2015-09-13 02:28:08 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mOffice Load (0.1ms)[0m  SELECT "offices".* FROM "offices" INNER JOIN "offices_projects" ON "offices"."id" = "offices_projects"."office_id" WHERE "offices_projects"."project_id" = ?  [["project_id", 1]]
+  Rendered projects/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/bootstrap.css" for ::1 at 2015-09-13 02:28:09 -0300
+Processing by ProjectsController#show as CSS
+  Parameters: {"id"=>"bootstrap"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=bootstrap):
+  app/controllers/projects_controller.rb:67:in `set_project'
+
+
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.6ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (55.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (123.5ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/bootstrap.self-3b770dd345b26b385a4d9bf4f218b6e50cfca716c5f19ec57c518eaac19da3a2.css?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/scaffolds.self-db323bd9f8f4e27a9e6689735aee0ac52f340f7ef6ed182b8d3c056b9959249b.css?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/application.self-c4991312985bccd133f1f21ab2f6a5d0129a8416a91037313b14f05d7d2e7dde.css?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/assets/bucket-c07b637a565e6f5d265dda9b5cf352fae18e166f54de907519a5d3fc190d6d1e.png" for ::1 at 2015-09-13 02:28:09 -0300
+
+
+Started GET "/projects/1/edit" for ::1 at 2015-09-13 02:28:14 -0300
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT "offices".* FROM "offices"[0m
+  [1m[35mOffice Exists (0.1ms)[0m  SELECT  1 AS one FROM "offices" INNER JOIN "offices_projects" ON "offices"."id" = "offices_projects"."office_id" WHERE "offices_projects"."project_id" = ? AND "offices"."id" = ? LIMIT 1  [["project_id", 1], ["id", 1]]
+  [1m[36mOffice Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "offices" INNER JOIN "offices_projects" ON "offices"."id" = "offices_projects"."office_id" WHERE "offices_projects"."project_id" = ? AND "offices"."id" = ? LIMIT 1[0m  [["project_id", 1], ["id", 2]]
+  Rendered projects/_form.html.erb (9.1ms)
+  Rendered projects/edit.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/projects/1" for ::1 at 2015-09-13 02:28:25 -0300
+Processing by ProjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tGtGE9ugOAnkz8VKYVlGtqPphg4zWEgd/a9U4xpcv/peZ9/hlzAxQLHluVxzOmxqb5FDR9cZ4z4ATKFGG6QdyA==", "project"=>{"name"=>"Plaia", "office_ids"=>["1", "2"], "status"=>"In Development", "description"=>"", "technologies"=>"", "email"=>"", "production"=>"", "repository"=>"https://github.com/wandecleya/spiderchart", "management"=>"", "documentation"=>"lsfas"}, "commit"=>"Submit", "id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mOffice Load (1.1ms)[0m  SELECT "offices".* FROM "offices" WHERE "offices"."id" IN (1, 2)
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT "offices".* FROM "offices" INNER JOIN "offices_projects" ON "offices"."id" = "offices_projects"."office_id" WHERE "offices_projects"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[35mSQL (0.6ms)[0m  UPDATE "projects" SET "repository" = ?, "updated_at" = ? WHERE "projects"."id" = ?  [["repository", "https://github.com/wandecleya/spiderchart"], ["updated_at", "2015-09-13 05:28:25.678608"], ["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 15ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/projects/1" for ::1 at 2015-09-13 02:28:25 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT "offices".* FROM "offices" INNER JOIN "offices_projects" ON "offices"."id" = "offices_projects"."office_id" WHERE "offices_projects"."project_id" = ?[0m  [["project_id", 1]]
+  Rendered projects/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 92ms (Views: 90.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/bootstrap.css" for ::1 at 2015-09-13 02:28:25 -0300
+Processing by ProjectsController#show as CSS
+  Parameters: {"id"=>"bootstrap"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=bootstrap):
+  app/controllers/projects_controller.rb:67:in `set_project'
+
+
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.9ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.1ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (116.8ms)
