@@ -20,6 +20,7 @@
     <p><b><%= 'Contact:' if @project.email.present? %> </b><%= @project.email  %></p>
     <p><b><%= 'Repository:' if @project.repository.present? %> </b><%= link_to @project.repository   %></p>
     <p><b><%= 'Project Management System:'if @project.management.present? %>  </b><%=link_to @project.management %></p>
+     <p><b><%= 'Documentation:'if @project.documentation.present? %>  </b><%=link_to @project.documentation,  @project.documentation, :target => '_blank' %></p>
     <p>
       <%= link_to 'Edit', edit_project_path(@project), :class => 'btn btn-default' %> 
       <%= link_to 'Destroy', @project, data: { confirm: 'Are you sure?' }, method: :delete, :class => 'btn btn-default' %> 
