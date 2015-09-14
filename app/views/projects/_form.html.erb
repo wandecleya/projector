@@ -13,60 +13,92 @@
     </div>
   <% end %>
 
-  <div class="field form-group">
-    <%= f.label :name %><br>
-    <%= f.text_field :name, :class=>'form-control' %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label :name %><br>
+      <%= f.text_field :name, :class=>'validate' %>
+    </div> 
   </div>
-    <div class="field form-group">
-    <%= f.label :office %><br>
- <%= hidden_field_tag "project[office_ids][]", nil %>
-    <% Office.all.each do |office|%>
-      <%= check_box_tag "project[office_ids][]", office.id, @project.offices.include?(office)%>
-      <%= office.city %>
-    <% end %>
 
-    <p>Do you want to add a new office? <%= link_to 'New Office', new_office_path %></p>
-    
+  <div class="row">
+     <div class="input-field col s12">
+       <%= f.label :office %><br>
+      <% hidden_field_tag "project[office_ids][]", nil %>
+      <% Office.all.each do |office|%>
+        <p>
+        <%= check_box_tag "project[office_ids][]", office.id, @project.offices.include?(office), :id=>"project_#{office.city}"%>
+        <%=f.label office.city %>
+        </p>
+      <% end %>
+      <br>
+      <p>Register a <%= link_to 'New Office', new_office_path %></p>
+    </div>
   </div>
-  <div class="field form-group">
-    <%= f.label :status %><br>
-    <%= f.select :status, ['In Development', 'Finished'], :class=>'form-control' %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label :status %><br>
+      <%= f.select :status, ['In Development', 'Concluded', 'Abandoned'] %>
+    </div>
   </div>
-  <div class="field form-group">
-    <%= f.label :description %><br>
-    <%= f.text_area :description, :class=>'form-control', :rows=>'4' %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label :description %><br>
+      <%= f.text_area :description, :class=>"materialize-textarea" %>
+    </div>
   </div>
-  <div class="field form-group">
-    <%= f.label :technologies %><br>
-    <%= f.text_area :technologies, :class=>'form-control', :rows=>'2' %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label :technologies %><br>
+      <%= f.text_area :technologies, :class=>"materialize-textarea" %>
+    </div>
   </div>
-  <div class="field form-group">
-    <%= f.label :email %><br>
-    <%= f.text_field :email, :class=>'form-control' %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label "Link to Production" %><br>
+      <%= f.text_field :production %>
+    </div>
   </div>
-  <div class="field form-group">
-    <%= f.label "Link to Production" %><br>
-    <%= f.text_field :production, :class=>'form-control' %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label :documentation %><br>
+      <%= f.text_field :documentation %>
+    </div>
   </div>
-  <div class="field form-group">
-    <%= f.label :repository %><br>
-    <%= f.text_field :repository, :class=>'form-control' %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label "Project Management System Link" %><br>
+      <%= f.text_field :management %>
+    </div>
   </div>
-  <div class="field form-group">
-    <%= f.label "Project Management System" %><br>
-    <%= f.text_field :management, :class=>'form-control' %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label :repository %><br>
+      <%= f.text_field :repository %>
+    </div>
   </div>
-  <div class="field form-group">
-    <%= f.label :documentation %><br>
-    <%= f.text_field :documentation, :class=>'form-control' %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label :email %><br>
+      <%= f.text_field :email %>
+    </div>
   </div>
-  <div class="field form-group">
-    <%= f.label :picture %><br>
-    <%= f.file_field :picture %>
+
+  <div class="row">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>Image</span>
+
+        <%= f.file_field :picture %>
+      </div>
+    </div>
   </div>
-  <div class="form-group ">
-    <%= f.submit 'Submit', :class => 'btn btn-primary' %>
-    <%= link_to 'Back', projects_path, :class => 'btn btn-default' %>
+
+
+
+ 
+  <div class="row">
+    <%= f.submit 'Submit', :class => 'btn ' %>
+    <%= link_to 'Back', projects_path, :class => 'btn' %>
    
   </div>
 

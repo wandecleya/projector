@@ -11,15 +11,23 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :city %><br>
-    <%= f.text_field :city %>
+  <div class="row">
+    <div class="input-field col s12">
+      <%= f.label :city %><br>
+      <%= f.text_field :city %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :country %><br>
-    <%= f.text_field :country %>
+  <div class="row">
+   <div class="input-field col s12">
+      <%= f.label :country %><br>
+      <%= f.text_field :country %>
+    </div>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="row">
+    <%= f.submit 'Submit', :class => 'btn' %>
+    <%= link_to 'Back', offices_path, :class => 'btn' %>
   </div>
 <% end %>
+
+
+

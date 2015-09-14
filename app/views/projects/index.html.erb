@@ -1,24 +1,36 @@
 <p id="notice"><%= notice %></p>
 
+<div class='row'>
+  <div class="col s3">
+  <%= link_to 'New Project', new_project_path, :class => 'btn blue-grey darken-4' %>
+  </div>
+</div>
 
-
-
-<% @projects.in_groups_of(3) do |group|%>
+<% @projects.in_groups_of(4) do |group|%>
   <div class="row">
     <% group.compact.each do |project| %>
-      <div class="col-md-4">
-      	 <h4 class='text-center'><%= link_to project.name, project%></h4>
-        <%= image_tag project.picture_url, width: '100%', :class=>"img-thumbnail" if project.present? %>
+      <div class="col s3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <%= image_tag project.picture_url, width: '100%', :class=>" img-thumbnail activator" if project.present? %>
+
+            <%= link_to project.name, project, class: "card-title black-text"%>
+              
+   
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"><%= project.name %><i class="material-icons right">close</i></span>
+            <p><%= project.description %></p>
+          </div>
        
-        <%= project.description %>
+        
+        </div>
       </div>
     <% end %>
   </div>
 <% end %>
 
-<div class='row'>
-	<%= link_to 'New Project', new_project_path, :class => 'btn btn-default' %>
-</div>
+
 
 
 

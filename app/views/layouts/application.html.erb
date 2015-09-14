@@ -3,21 +3,29 @@
 <head>
   <title>Projector</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <link rel="stylesheet" href="bootstrap.css">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class='container'>
-<nav class='navbar navbar-default'>
+<body>
 
-<a href='/' class='navbar-brand'>	
-     Projector
-  </a>
-</nav>
+    <nav>
+      <div class="nav-wrapper  blue-grey darken-4">
+       <a href="/"><img src="<%= asset_path( 'projector.png' ) %>"  class="icon"/></a> 
+        <a href="/" class="brand-logo">   Projector</a>
+      </div>
+    </nav>
+
+  <div class='container'>
 
 
 
-<%= yield %>
-
+  <%= yield %>
+</div>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 </body>
 </html>
