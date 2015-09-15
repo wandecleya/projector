@@ -1,11 +1,15 @@
 
 
+
 @charset "UTF-8";
 
 // Mixins
 @import "materialize/components/prefixer";
 @import "materialize/components/mixins";
 @import "materialize/components/color";
+
+$primary-color: color("blue-grey", "darken-2") !default;
+$secondary-color: color("blue-grey", "darken-2") !default;
 
 // Variables;
 @import "materialize/components/variables";
@@ -38,7 +42,6 @@
 @import "materialize/components/date_picker/default.scss";
 @import "materialize/components/date_picker/default.date.scss";
 @import "materialize/components/date_picker/default.time.scss";
-@import 'materialize';
 
 
 .icon{
