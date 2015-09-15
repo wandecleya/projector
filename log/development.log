@@ -33400,3 +33400,1703 @@ Processing by ProjectsController#index as HTML
   [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
   Rendered projects/index.html.erb within layouts/application (8.1ms)
 Completed 200 OK in 147ms (Views: 146.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/new" for ::1 at 2015-09-15 15:25:01 -0300
+Processing by ProjectsController#new as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT "offices".* FROM "offices"
+  Rendered projects/_form.html.erb (8.8ms)
+  Rendered projects/new.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (couldn't find file 'js/materialize.min' with type 'application/javascript'):
+     6:  
+     7: 
+     8: 
+     9:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:   <%= csrf_meta_tags %>
+    11: </head>
+    12: <body>
+  app/assets/javascripts/application.js:16
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__2606508397715545535_70262702361920'
+
+
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.2ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (61.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (130.5ms)
+
+
+Started GET "/projects/new" for ::1 at 2015-09-15 15:25:18 -0300
+Processing by ProjectsController#new as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT "offices".* FROM "offices"[0m
+  Rendered projects/_form.html.erb (7.7ms)
+  Rendered projects/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 145ms (Views: 143.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-598c8d12f7a0da9045d93782f4b49b9dfdf6ed22976ba4797d6c68e8365f2c99.css?body=1" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/initialization.js" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:25:19 -0300
+
+
+Started GET "/" for ::1 at 2015-09-15 15:25:20 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:25:20 -0300
+
+
+Started GET "/projects/1" for ::1 at 2015-09-15 15:25:26 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mOffice Load (0.1ms)[0m  SELECT "offices".* FROM "offices" INNER JOIN "offices_projects" ON "offices"."id" = "offices_projects"."office_id" WHERE "offices_projects"."project_id" = ?  [["project_id", 1]]
+  Rendered projects/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/roboto/Roboto-Bold-8b84b2abc336ee61f48a28a697b6ace2333ea5f1868aa15d5aeb2c7beac6d716.woff2" for ::1 at 2015-09-15 15:25:26 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:25:28 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 68ms (Views: 67.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:30:09 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 2010ms (Views: 2009.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/application.self-bbbc7e07da36e9494e92198f58f19917b0288ffdb8463327e324026d15369434.css?body=1" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:30:11 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:30:20 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 2117ms (Views: 2116.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-60ba13556e47141b60b0eabb14135309c257fa59350ccd698780386a18ae8303.css?body=1" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:30:23 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:35:06 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 1947ms (Views: 1946.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-a409e249fd767d145cabe6bea0eed0be989c179016bb00dc0e9f66e34b768114.css?body=1" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:35:08 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:35:09 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:35:09 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:36:05 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 1886ms (Views: 1884.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:36:07 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:38:00 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:38:00 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:38:41 -0300
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:5: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...uffer.append=( link_to <i class="material-icons">add</i>, ne...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:6: unknown regexp options - dv
+unmatched close parenthesis: /i>, new_project_path, :class => 'btn-floating' );@output_buffer.safe_append='
+  </i
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:7: syntax error, unexpected '<'
+</div>
+ ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:20: unknown regexp options - dv
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:21: syntax error, unexpected '<'
+          <div class="card-reveal">
+           ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:22: syntax error, unexpected '<'
+            <span class="card-title ">'.fr...
+             ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:22: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...ut_buffer.safe_append='<i class="material-icons right">close...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:22: unknown regexp options - pa
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:23: syntax error, unexpected '<'
+            <p>'.freeze;@output_buffer.app...
+             ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:24: unknown regexp options - dv
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:27: syntax error, unexpected '<'
+        </div>
+         ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:28: unknown regexp options - dv
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:30: unterminated regexp meets end of file
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:30: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/projects/index.html.erb:5: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:6: unknown regexp options - dv
+  app/views/projects/index.html.erb:7: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:20: unknown regexp options - dv
+  app/views/projects/index.html.erb:21: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:22: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:22: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:22: unknown regexp options - pa
+  app/views/projects/index.html.erb:23: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:24: unknown regexp options - dv
+  app/views/projects/index.html.erb:27: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:28: unknown regexp options - dv
+  app/views/projects/index.html.erb:30: unterminated regexp meets end of file
+  app/views/projects/index.html.erb:30: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.0ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.5ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (105.8ms)
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:38:59 -0300
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...d=( link_to "<i class="material-icons">add</i>", new_project...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:5: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...k_to "<i class="material-icons">add</i>", new_project_path, ...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:5: syntax error, unexpected ',', expecting ')'
+...lass="material-icons">add</i>", new_project_path, :class => ...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:5: syntax error, unexpected =>, expecting :: or '[' or '.'
+...>", new_project_path, :class => 'btn-floating' );@output_buf...
+...                               ^):
+  app/views/projects/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/projects/index.html.erb:5: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:5: syntax error, unexpected ',', expecting ')'
+  app/views/projects/index.html.erb:5: syntax error, unexpected =>, expecting :: or '[' or '.'
+
+
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.7ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.9ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (55.0ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.9ms)
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:39:21 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 72ms (Views: 71.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:39:21 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:41:06 -0300
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <a class="btn-floating btn-large waves-eff...
+               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  <a class="btn-floating btn-large waves-effect waves-lig...
+                            ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...s="btn-floating btn-large waves-effect waves-light red"><i c...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...ng btn-large waves-effect waves-light red"><i class="materia...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...ge waves-effect waves-light red"><i class="material-icons">a...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...s-light red"><i class="material-icons">add</i></a>+", new_pr...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:6: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+... red"><i class="material-icons">add</i></a>+", new_project_p...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:6: syntax error, unexpected ',', expecting ')'
+..."material-icons">add</i></a>+", new_project_path, :class => ...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:6: syntax error, unexpected =>, expecting :: or '[' or '.'
+...+", new_project_path, :class => 'btn-floating' );@output_buf...
+...                               ^):
+  app/views/projects/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/projects/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/projects/index.html.erb:6: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:6: syntax error, unexpected ',', expecting ')'
+  app/views/projects/index.html.erb:6: syntax error, unexpected =>, expecting :: or '[' or '.'
+
+
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.2ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.5ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (104.9ms)
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:41:27 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:41:27 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:41:27 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:41:27 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:41:28 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:41:28 -0300
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:41:28 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:41:28 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:41:28 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:41:28 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:41:28 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:41:28 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:41:28 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:41:28 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:41:28 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:41:28 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:42:15 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 72ms (Views: 71.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:42:15 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:42:16 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:42:16 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:43:19 -0300
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:5: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...uffer.append=( link_to <i class="material-icons">add</i>, ne...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:7: unknown regexp options - dv
+unmatched close parenthesis: /i>, new_project_path, :class => 'btn-floating' );@output_buffer.safe_append='
+
+  </i
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:8: syntax error, unexpected '<'
+</div>
+ ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:21: unknown regexp options - dv
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:22: syntax error, unexpected '<'
+          <div class="card-reveal">
+           ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:23: syntax error, unexpected '<'
+            <span class="card-title ">'.fr...
+             ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:23: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...ut_buffer.safe_append='<i class="material-icons right">close...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:23: unknown regexp options - pa
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:24: syntax error, unexpected '<'
+            <p>'.freeze;@output_buffer.app...
+             ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:25: unknown regexp options - dv
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:28: syntax error, unexpected '<'
+        </div>
+         ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:29: unknown regexp options - dv
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:31: unterminated regexp meets end of file
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:31: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/projects/index.html.erb:5: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:7: unknown regexp options - dv
+  app/views/projects/index.html.erb:8: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:21: unknown regexp options - dv
+  app/views/projects/index.html.erb:22: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:23: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:23: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:23: unknown regexp options - pa
+  app/views/projects/index.html.erb:24: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:25: unknown regexp options - dv
+  app/views/projects/index.html.erb:28: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:29: unknown regexp options - dv
+  app/views/projects/index.html.erb:31: unterminated regexp meets end of file
+  app/views/projects/index.html.erb:31: syntax error, unexpected end-of-input, expecting ')'
+
+
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:43:22 -0300
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:5: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...uffer.append=( link_to <i class="material-icons">add</i>, ne...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:7: unknown regexp options - dv
+unmatched close parenthesis: /i>, new_project_path, :class => 'btn-floating' );@output_buffer.safe_append='
+
+  </i
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:8: syntax error, unexpected '<'
+</div>
+ ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:21: unknown regexp options - dv
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:22: syntax error, unexpected '<'
+          <div class="card-reveal">
+           ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:23: syntax error, unexpected '<'
+            <span class="card-title ">'.fr...
+             ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:23: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+...ut_buffer.safe_append='<i class="material-icons right">close...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:23: unknown regexp options - pa
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:24: syntax error, unexpected '<'
+            <p>'.freeze;@output_buffer.app...
+             ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:25: unknown regexp options - dv
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:28: syntax error, unexpected '<'
+        </div>
+         ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:29: unknown regexp options - dv
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:31: unterminated regexp meets end of file
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:31: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/projects/index.html.erb:5: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:7: unknown regexp options - dv
+  app/views/projects/index.html.erb:8: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:21: unknown regexp options - dv
+  app/views/projects/index.html.erb:22: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:23: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:23: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:23: unknown regexp options - pa
+  app/views/projects/index.html.erb:24: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:25: unknown regexp options - dv
+  app/views/projects/index.html.erb:28: syntax error, unexpected '<'
+  app/views/projects/index.html.erb:29: unknown regexp options - dv
+  app/views/projects/index.html.erb:31: unterminated regexp meets end of file
+  app/views/projects/index.html.erb:31: syntax error, unexpected end-of-input, expecting ')'
+
+
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:43:51 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 82ms (Views: 81.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:43:51 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:45:40 -0300
+Processing by ProjectsController#index as HTML
+  Rendered projects/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+...d=( link_to "<i class="material-icons">add</i>".html_safe, n...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:5: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...k_to "<i class="material-icons">add</i>".html_safe, new_proj...
+...                               ^
+/Users/wmartins/Documents/Projects/projector/app/views/projects/index.html.erb:5: syntax error, unexpected =>, expecting :: or '[' or '.'
+...fe, new_project_path, :class => 'btn-floating btn-large wave...
+...                               ^):
+  app/views/projects/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/projects/index.html.erb:5: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  app/views/projects/index.html.erb:5: syntax error, unexpected =>, expecting :: or '[' or '.'
+
+
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.0ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.7ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (102.9ms)
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:46:08 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:46:09 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:47:02 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 72ms (Views: 71.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:47:02 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:47:02 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:47:02 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:47:02 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:47:02 -0300
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:47:02 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:47:03 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:47:03 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:47:03 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:47:03 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:47:03 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:47:03 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:47:03 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:47:03 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:47:03 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:48:41 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 67ms (Views: 66.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:48:41 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:49:16 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:49:16 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:49:26 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:49:27 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:49:54 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:49:54 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:49:54 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:49:54 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:49:54 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:49:55 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:49:55 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:49:55 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:49:55 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:49:55 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:49:55 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:49:55 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:49:55 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:49:55 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:49:55 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:49:55 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:50:38 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 76ms (Views: 75.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:50:38 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:50:39 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:50:39 -0300
+
+
+Started GET "/projects/new" for ::1 at 2015-09-15 15:50:46 -0300
+Processing by ProjectsController#new as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT "offices".* FROM "offices"
+  Rendered projects/_form.html.erb (8.2ms)
+  Rendered projects/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/initialization.js" for ::1 at 2015-09-15 15:50:46 -0300
+
+
+Started GET "/projects/new" for ::1 at 2015-09-15 15:50:48 -0300
+Processing by ProjectsController#new as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT "offices".* FROM "offices"[0m
+  Rendered projects/_form.html.erb (5.8ms)
+  Rendered projects/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/initialization.js" for ::1 at 2015-09-15 15:50:49 -0300
+
+
+Started GET "/" for ::1 at 2015-09-15 15:50:53 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.5ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 113ms (Views: 111.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/new" for ::1 at 2015-09-15 15:50:54 -0300
+Processing by ProjectsController#new as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT "offices".* FROM "offices"[0m
+  Rendered projects/_form.html.erb (7.7ms)
+  Rendered projects/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/initialization.js" for ::1 at 2015-09-15 15:50:55 -0300
+
+
+Started GET "/" for ::1 at 2015-09-15 15:50:56 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-15 15:51:10 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/wmartins/Documents/Projects/projector/app/views/layouts/application.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+...-light blue-grey darken-3' icon );@output_buffer.safe_append...
+...                               ^):
+  app/views/layouts/application.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.7ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/wmartins/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (111.9ms)
+
+
+Started GET "/" for ::1 at 2015-09-15 15:51:22 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 72ms (Views: 70.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/application.self-abdcc2124abbdbeb2b0212bc2f4ccd370d1711342654ef9713b5709d227a446d.css?body=1" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:51:22 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:51:23 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:51:23 -0300
+
+
+Started GET "/" for ::1 at 2015-09-15 15:52:08 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 1906ms (Views: 1905.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/application.self-b6037be818b54d11dbe4127609b360201cba5552af90f66370fe6af0353fa120.css?body=1" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:52:10 -0300
+
+
+Started GET "/" for ::1 at 2015-09-15 15:52:22 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 199ms (Views: 197.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/application.self-b6037be818b54d11dbe4127609b360201cba5552af90f66370fe6af0353fa120.css?body=1" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:52:23 -0300
+
+
+Started GET "/" for ::1 at 2015-09-15 15:52:50 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:52:50 -0300
+
+
+Started GET "/assets/application.self-b6037be818b54d11dbe4127609b360201cba5552af90f66370fe6af0353fa120.css?body=1" for ::1 at 2015-09-15 15:52:50 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:52:50 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:52:50 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:52:50 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:52:50 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:52:51 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:52:51 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:52:51 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:52:51 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:52:51 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:52:51 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:52:51 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:52:51 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:52:51 -0300
+
+
+Started GET "/" for ::1 at 2015-09-15 15:53:51 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/application.self-b6037be818b54d11dbe4127609b360201cba5552af90f66370fe6af0353fa120.css?body=1" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:53:51 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:53:52 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:53:52 -0300
+
+
+Started GET "/" for ::1 at 2015-09-15 15:54:26 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 1862ms (Views: 1860.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-c82645f1213ef42e03a71976105b0bae6f9788c39d3f691d8b0bbbe145997daa.css?body=1" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/jquery-2.1.4.min.self-92bfaaece1eee1e40fd3b55441ee536e7f6a03242aa5fe10e2597a27103c9dae.js?body=1" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/materialize.min.self-a5cce85e9906c02b69c33598687e19045d17441d6e13643ebe4293d46ee4927b.js?body=1" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/initialization.self-8ab182123a249b11515b40b43321d1d8f459a4aed9a18328d7a7d69bb4cdf4b2.js?body=1" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/application.self-56d643ac06da1784a340ce78885f6ac2737d5c2a694864e79bfe21afc403dc9c.js?body=1" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/projects.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/projector-6ec85eb4170fce01d51865aa5701a3c70bb849ee342f4be28081d91968e42b06.png" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/fallback/default-4ae242700c77ff05d3d9b73b3dc2299bba936df48bab0d45471c67aec9926234.png" for ::1 at 2015-09-15 15:54:28 -0300
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-09-15 15:54:29 -0300
+
+
+Started GET "/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" for ::1 at 2015-09-15 15:54:29 -0300
+
+
+Started GET "/projects/new" for ::1 at 2015-09-15 15:54:34 -0300
+Processing by ProjectsController#new as HTML
+  [1m[35mOffice Load (0.6ms)[0m  SELECT "offices".* FROM "offices"
+  Rendered projects/_form.html.erb (18.0ms)
+  Rendered projects/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 114ms (Views: 112.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/initialization.js" for ::1 at 2015-09-15 15:54:34 -0300
+
+
+Started GET "/" for ::1 at 2015-09-15 15:54:41 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 69ms (Views: 68.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/projects/2" for ::1 at 2015-09-15 15:54:43 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT "offices".* FROM "offices" INNER JOIN "offices_projects" ON "offices"."id" = "offices_projects"."office_id" WHERE "offices_projects"."project_id" = ?[0m  [["project_id", 2]]
+  Rendered projects/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/roboto/Roboto-Bold-8b84b2abc336ee61f48a28a697b6ace2333ea5f1868aa15d5aeb2c7beac6d716.woff2" for ::1 at 2015-09-15 15:54:44 -0300
+
+
+Started GET "/projects" for ::1 at 2015-09-15 15:54:48 -0300
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/1" for ::1 at 2015-09-15 15:54:49 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mOffice Load (0.1ms)[0m  SELECT "offices".* FROM "offices" INNER JOIN "offices_projects" ON "offices"."id" = "offices_projects"."office_id" WHERE "offices_projects"."project_id" = ?  [["project_id", 1]]
+  Rendered projects/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-15 15:55:16 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 60ms (Views: 59.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects/new" for ::1 at 2015-09-15 15:55:19 -0300
+Processing by ProjectsController#new as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT "offices".* FROM "offices"
+  Rendered projects/_form.html.erb (6.7ms)
+  Rendered projects/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/initialization.js" for ::1 at 2015-09-15 15:55:19 -0300
+
+
+Started GET "/" for ::1 at 2015-09-15 15:55:21 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 60ms (Views: 59.7ms | ActiveRecord: 0.2ms)

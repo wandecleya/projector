@@ -8,8 +8,8 @@
 @import "materialize/components/mixins";
 @import "materialize/components/color";
 
-$primary-color: color("blue-grey", "darken-2") !default;
-$secondary-color: color("blue-grey", "darken-2") !default;
+$primary-color: color("blue-grey", "darken-1") !default;
+$secondary-color: color("blue-grey", "darken-1") !default;
 
 // Variables;
 @import "materialize/components/variables";
@@ -45,6 +45,16 @@ $secondary-color: color("blue-grey", "darken-2") !default;
 
 
 .icon{
-	padding: 5px 20px;
+	
+	margin: 5px 20px;
 }
+
+ .front-title {
+
+    font-size: 74px;
+    font-weight: 400;
+    &.activator {
+      cursor: pointer;
+    }
+  }
 
