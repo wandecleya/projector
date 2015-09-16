@@ -4,8 +4,24 @@ one:
   name: MyString
   description: MyText
   picture: MyString
+  status: MyStatus
 
 two:
   name: MyString
   description: MyText
   picture: MyString
+  status: MyStatus
+
+complete:
+  name: Projector
+  description: Web Site showcasing projects
+  picture: image
+  status: In development
+  email: projector@tw.com
+  production: www.projector.com
+  repository: Projector.git
+  management: projector.mingle
+  technologies: rubyonrails
+  documentation: projector.sharelatex
+  
+

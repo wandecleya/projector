@@ -15,7 +15,7 @@
               <span class="card-title"> <%= @project.name %> </span>
               
                 <p><b>Status: </b><%= @project.status %></p>
-                <p><b> Office: </b>
+                <p><b> <%= 'Offices:' if @project.offices.present? %></b>
                   <% @project.offices.each do |office|%>
                   <%= link_to  office.city, office %>
                   <% end %></p>
