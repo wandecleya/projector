@@ -7,10 +7,10 @@
     <% group.compact.each do |project| %>
       <div class="col s3">
         <div class="card">
-          <div class="card-image ">
+          <div class="card-ximage ">
             <%= image_tag project.picture_url, width: '100%', :class=>" img-thumbnail activator" if project.present? %>
 
-            <%= link_to project.name, project, class: "card-title front-title black-text"%>
+            <%= link_to project.name, project, class: "card-title black-text"%>
               
    
           </div>
@@ -24,6 +24,8 @@
       </div>
     <% end %>
   </div>
+
+
 <% end %>
 
 
