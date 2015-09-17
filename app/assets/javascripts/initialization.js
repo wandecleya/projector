@@ -1,7 +1,3 @@
-
-$(window).load(function() {
-    // Select - Single
-    $('select:not([multiple])').material_select();
-
-});
-
+ $(document).ready(function() {
+    $('select').material_select();
+  });
