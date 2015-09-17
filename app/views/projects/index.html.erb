@@ -6,21 +6,23 @@
   <div class="row">
     <% group.compact.each do |project| %>
       <div class="col s3">
-        <div class="card">
-          <div class="card-ximage ">
-            <%= image_tag project.picture_url, width: '100%', :class=>" img-thumbnail activator" if project.present? %>
+        <%= link_to project do %> 
+          <div class="card">
+            <div class="card-ximage ">
+              <%= image_tag project.picture_url, width: '100%', :class=>" img-thumbnail activator" if project.present? %>
 
-            <%= link_to project.name, project, class: "card-title black-text"%>
+              <span class="card-title black-text"><%= project.name %></span>
               
-   
+     
+            </div>
+            <div class="card-reveal">
+              <span class="card-title black-text"><%= project.name %></span>
+              <p><%= project.description %></p>
+            </div>
+        <% end %> 
+          
           </div>
-          <div class="card-reveal">
-            <span class="card-title black-text"><%= project.name %></span>
-            <p><%= project.description %></p>
-          </div>
-       
-        
-        </div>
+        </a> 
       </div>
     <% end %>
   </div>
