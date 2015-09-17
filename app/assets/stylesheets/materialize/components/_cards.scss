@@ -10,6 +10,7 @@
 }
 
 .card {
+  padding: $card-padding;
   position: relative;
   overflow: hidden;
   margin: $element-top-margin 0 $element-bottom-margin 0;
