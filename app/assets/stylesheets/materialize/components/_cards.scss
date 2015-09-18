@@ -153,6 +153,10 @@
       cursor: pointer;
       display: block;
     }
+    p{
+      padding-right: (2*$card-padding);
+
+    }
 
   }
 }
