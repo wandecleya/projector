@@ -1,37 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<div class="row">
-  <div class="col s3">
-    <form id='filters'>
-
-<select name="garden" multiple="multiple" form="filters">
-  <option>Flowers</option>
-  <option selected="selected">Shrubs</option>
-  <option>Trees</option>
-  <option selected="selected">Bushes</option>
-  <option>Grass</option>
-  <option>Dirt</option>
-</select>
-
- 
-
-    </form>
-
-  </div>
-</div>
-
-
-<script>
-$( "select" )
-  .change(function() {
-    var str = "";
-    $( "select option:selected" ).each(function() {
-      str += $( this ).text() + " ";
-    });
-    alert( "bla" );
-  })
-  .trigger( "change" );
-</script>
 
 
 
