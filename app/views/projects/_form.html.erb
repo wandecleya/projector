@@ -27,7 +27,7 @@
       <% Office.all.each do |office|%>
         <p>
         <%= check_box_tag "project[office_ids][]", office.id, @project.offices.include?(office), :id=>"project_#{office.city}"%>
-        <%=f.label office.city %>
+        <%=f.label office.city.titleize %>
         </p>
       <% end %>
       <br>
@@ -35,7 +35,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="input-field browser-defaultx col s12">
+    <div class="input-field browser-default col s12">
       <%= f.label :status %><br>
       <%= f.select :status, ['In Development', 'Concluded', 'Abandoned'], :class =>"browser-default" %>
     </div>
