@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 
-
 <div class="row">
   <div class="col s4">
     <%= image_tag(@project.picture_url, width: '100%', :class => 'img-thumbnail' ) if @project.picture.present? %>
@@ -11,13 +10,13 @@
 
 
           <div class="card blue-grey lighten-5">
-            <div class="card-content ">
+            <div class="card-content">
               <h3><%= @project.name %> </h3>
               
                 <p><b>Status: </b><%= @project.status %></p>
                 <p><b> <%= 'Offices:' if @project.offices.present? %></b>
                   <% @project.offices.each do |office|%>
-                  <%= link_to  office.city, office %>
+                 <span class='chip'> <%= link_to  office.city, office %></span>
                   <% end %></p>
                    <p><b><%= 'Technologies:'if @project.technologies.present? %> </b><%= @project.technologies %></p><br>
                    <p><b><%= 'Description:' if @project.description.present? %> </b><%= @project.description %></p><br>

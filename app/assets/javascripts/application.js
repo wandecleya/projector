@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require materialize.min
+//= require js/forms
 //= require_tree .
 
