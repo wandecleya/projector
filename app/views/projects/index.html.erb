@@ -1,15 +1,24 @@
 <p id="notice"><%= notice %></p>
 
+<div class="row">
+  <div class="input-field col s3">
+    <select id="status">
+    <%= options_for_select([['All Status', :all],['Crying for Help', :help], ['In Development', :development], ['Concluded', :concluded], ['Abandoned', :abandoned]], :all) %>
+ </select>
+  </div>
+</div>
+ 
+ 
 
 
 
-
-<% @projects.in_groups_of(4) do |group|%>
+<div id="projects">
+  <% @projects.in_groups_of(4) do |group|%>
   <div class="row">
     <% group.compact.each do |project| %>
       <div class="col s3">
         <%= link_to project do %> 
-          <div class="card" id="project" data-status='<% project.status%>'>
+          <div class="card" id='project' data-status='<%= project.status%>'>
             <div class="card-ximage" >
               <%= image_tag project.picture_url, width: '100%', :class=>" img-thumbnail activator" if project.present? %>
 
@@ -33,6 +42,8 @@
 
 
 <% end %>
+</div>
+
 
 
 
