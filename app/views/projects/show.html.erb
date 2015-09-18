@@ -10,22 +10,25 @@
   <div class="col s8">
 
 
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title"> <%= @project.name %> </span>
+          <div class="card blue-grey lighten-5">
+            <div class="card-content ">
+              <span class="card-title black-text"> <h3><%= @project.name %> </h3></span>
               
                 <p><b>Status: </b><%= @project.status %></p>
                 <p><b> <%= 'Offices:' if @project.offices.present? %></b>
                   <% @project.offices.each do |office|%>
                   <%= link_to  office.city, office %>
                   <% end %></p>
+                   <p><b><%= 'Technologies:'if @project.technologies.present? %> </b><%= @project.technologies %></p><br>
+                   <p><b><%= 'Description:' if @project.description.present? %> </b><%= @project.description %></p><br>
+              
                 <p><b><%= 'Project in Production:' if @project.production.present? %> </b><%= link_to @project.production, @project.production, :target => '_blank'  if @project.production.present? %></p>
-                <p><b><%= 'Description:' if @project.description.present? %> </b><%= @project.description %></p>
-                <p><b><%= 'Technologies:'if @project.technologies.present? %> </b><%= @project.technologies %></p>
-                <p><b><%= 'Contact:' if @project.email.present? %> </b><%= @project.email  %></p>
+               <p><b><%= 'Documentation:'if @project.documentation.present? %>  </b><%=link_to @project.documentation,  @project.documentation, :target => '_blank' %></p>
+               
+               
                 <p><b><%= 'Repository:' if @project.repository.present? %> </b><%= link_to @project.repository, @project.repository, :target => '_blank'    %></p>
                 <p><b><%= 'Project Management System:'if @project.management.present? %>  </b><%=link_to @project.management, @project.management, :target => '_blank'  %></p>
-                 <p><b><%= 'Documentation:'if @project.documentation.present? %>  </b><%=link_to @project.documentation,  @project.documentation, :target => '_blank' %></p>
+                  <p><b><%= 'Contact:' if @project.email.present? %> </b><%= @project.email  %></p>
 
 
             </div>

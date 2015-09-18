@@ -38,6 +38,11 @@
     }
     .card-content {
       overflow: hidden;
+
+      p{
+        margin-top: 0em;
+        margin-bottom: 2em;
+      }
     }
     .card-action {
       position: absolute;
